@@ -1,1 +1,0 @@
-# Panigalle.github.io
