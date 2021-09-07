@@ -406,6 +406,7 @@ textarea {
     line-height: 1.2;
     font-weight: normal;
     color: #102746;
+    
 }
 
   img{
@@ -448,7 +449,14 @@ textarea {
       top: 0;
       left: 0;
       width: 100%;
+      transition: .2s linear;
+      padding-bottom: 20px;
+      z-index: 999;
   }
+  .header__active{
+      background: #0E1D28;
+  }
+
   .header__wrapper{
       display: flex;
       flex-wrap: wrap;
@@ -456,22 +464,27 @@ textarea {
       justify-content: space-between;
       padding-top: 56px;
   }
+
   .header__list{
       display: flex;
       flex-wrap: wrap;
   }
+
   .header__item{
       margin-right: 82px;
   }
+
   .header__item:last-child{
       margin-right: 0;
   }
+
   .header__link{
     font-size: 18px;
     line-height: 24px;
     color: white;
     text-decoration: none;
   }
+
   .header__link:hover, .header__link:focus, .header__link:active{
       opacity: 0.75; 
 
@@ -822,7 +835,7 @@ textarea {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #151824 60 %;
+    background: rgba(21, 24, 36, 0.6);
     padding: 16px 25px;
     justify-content: flex-end;
 
@@ -866,4 +879,74 @@ textarea {
 .top__card-more:hover, .top__card-more:focus, .top__card-more:active{
     background: #104b9a;
 }
+
 /* Top styles end*/
+
+/* Videos styles start*/
+
+.videos{
+    width: 100%;
+}
+
+.videos__wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.video__item{
+    padding-top: 56.25%;
+}
+
+.video__element{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Videos styles end*/
+
+/* Footer styles start*/
+
+.footer{
+    background: #0E1D28;
+    padding: 119px 0;
+}
+
+.footer__item{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.footer__logo{
+     width: 50%;
+}
+
+.footer__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.footer__menu-title{
+   color: white;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 24px;
+}
+
+.footer__menu-link{
+   text-decoration: none;
+   color: white;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
+}
+
+.footer__menu-link:hover, .footer__menu-link:focus, .footer__menu-link:active{
+    opacity: .75;
+}
+/* Footer styles end*/
